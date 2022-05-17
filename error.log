@@ -1,0 +1,254 @@
+
+[2022-05-17T13:57:17.527] [ERROR] error - Error conectado a MongoDB
+    at CarritoDaoMongoDb.update (E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\src\contenedores\ContenedorMongoDb.js:119:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-05-17T17:42:43.256] [ERROR] error - Error: productos validation failed: thumbail: Path `thumbail` is required.
+    at ValidationError.inspect (E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:763:19)
+    at inspect (node:internal/util/inspect:340:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2006:40)
+    at Object.format (node:internal/util/inspect:1880:10)
+    at basicLayout (E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\log4js\lib\layouts.js:64:57)
+    at app (E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\log4js\lib\appenders\file.js:76:23)
+    at E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    thumbail: ValidatorError: Path `thumbail` is required.
+        at validate (E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\mongoose\lib\schematype.js:1314:7)
+        at E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\mongoose\lib\document.js:2746:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbail',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'productos validation failed'
+}
+[2022-05-17T18:27:21.671] [ERROR] error - Error: timeout of 30000ms exceeded
+    at createError (E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\twilio\node_modules\axios\lib\core\createError.js:16:15)
+    at ClientRequest.handleRequestTimeout (E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\twilio\node_modules\axios\lib\adapters\http.js:369:16)
+    at Object.onceWrapper (node:events:509:28)
+    at ClientRequest.emit (node:events:390:28)
+    at TLSSocket.emitRequestTimeout (node:_http_client:763:9)
+    at Object.onceWrapper (node:events:509:28)
+    at TLSSocket.emit (node:events:402:35)
+    at TLSSocket.Socket._onTimeout (node:net:501:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 30000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'User-Agent': 'twilio-node/3.77.0 (win32 x64) node/v16.13.1',
+      'Accept-Charset': 'utf-8',
+      Connection: 'close',
+      Authorization: 'Basic QUMwODcwZWQ2YjNkMDYxZmUyY2I5OTdhNTQ5YTNjNDUzZTowN2I5NzcyZmMxNTMyZWNmOTcwYTZiZjU4ODE3MWE5Zg==',
+      'Content-Length': 616
+    },
+    maxRedirects: 0,
+    url: 'https://api.twilio.com/2010-04-01/Accounts/AC0870ed6b3d061fe2cb997a549a3c453e/Messages.json',
+    method: 'post',
+    proxy: false,
+    data: 'To=whatsapp%3A%2B5491169309425&From=whatsapp%3A%2B14155238886&Body=Productos%3A%20%5B%0A%20%20%7B%0A%20%20%20%20%22timestamp%22%3A%20%2217%2F5%20-%2017%3A39%3A10%22%2C%0A%20%20%20%20%22nombre%22%3A%20%22Bajo%22%2C%0A%20%20%20%20%22descripcion%22%3A%20%22Des%20del%20bajo%22%2C%0A%20%20%20%20%22codigo%22%3A%202%2C%0A%20%20%20%20%22thumbail%22%3A%20%22https%3A%2F%2Fdaiammusica.com.ar%2Fwp-content%2Fuploads%2F2020%2F04%2FEPIPHONE-BAJO-THUND.CLAS-IV-VS-1.jpg%22%2C%0A%20%20%20%20%22precio%22%3A%20444%2C%0A%20%20%20%20%22stock%22%3A%2023%2C%0A%20%20%20%20%22id%22%3A%20%226284078b569b5723b060f6a4%22%0A%20%20%7D%0A%5D',
+    paramsSerializer: [Function (anonymous)]
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      response: [Function],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 616,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'api.twilio.com',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 11,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'api.twilio.com',
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: null,
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: [HTTPParser],
+      _httpMessage: [Circular *1],
+      timeout: 30000,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 2162,
+      [Symbol(kHandle)]: null,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: -1,
+        _idlePrev: null,
+        _idleNext: null,
+        _idleStart: 200097,
+        _onTimeout: null,
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: true,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 2194,
+        [Symbol(triggerId)]: 2171
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 1036,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'POST /2010-04-01/Accounts/AC0870ed6b3d061fe2cb997a549a3c453e/Messages.json HTTP/1.1\r\n' +
+      'Accept: application/json\r\n' +
+      'Content-Type: application/x-www-form-urlencoded\r\n' +
+      'User-Agent: twilio-node/3.77.0 (win32 x64) node/v16.13.1\r\n' +
+      'Accept-Charset: utf-8\r\n' +
+      'Connection: close\r\n' +
+      'Authorization: Basic QUMwODcwZWQ2YjNkMDYxZmUyY2I5OTdhNTQ5YTNjNDUzZTowN2I5NzcyZmMxNTMyZWNmOTcwYTZiZjU4ODE3MWE5Zg==\r\n' +
+      'Content-Length: 616\r\n' +
+      'Host: api.twilio.com\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype],
+      freeSockets: [Object: null prototype] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/2010-04-01/Accounts/AC0870ed6b3d061fe2cb997a549a3c453e/Messages.json',
+    _ended: false,
+    res: null,
+    aborted: true,
+    timeoutCb: [Function: emitRequestTimeout],
+    upgradeOrConnect: false,
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': null,
+      '6': null,
+      _headers: [],
+      _url: '',
+      socket: [TLSSocket],
+      incoming: null,
+      outgoing: [Circular *1],
+      maxHeaderPairs: 2000,
+      _consumed: false,
+      onIncoming: [Function: parserOnIncomingClient],
+      [Symbol(owner_symbol)]: [HTTPClientAsyncResource]
+    },
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'api.twilio.com',
+    protocol: 'https:',
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'accept-charset': [Array],
+      connection: [Array],
+      authorization: [Array],
+      'content-length': [Array],
+      host: [Array]
+    },
+    [Symbol(kError)]: undefined
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2022-05-17T18:30:40.588] [ERROR] error - Error: Unexpected socket close
+    at Timeout._onTimeout (E:\WORK - Hernan\__CODERHOUSE__BACKEND\ProyectoFinal3\node_modules\nodemailer\lib\smtp-transport\index.js:189:31)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
